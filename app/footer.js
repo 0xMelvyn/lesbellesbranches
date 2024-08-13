@@ -12,7 +12,7 @@ const raleway = Raleway({
 const Footer = () => {
   return (
     <footer className={`flex bg-brique items-center flex-wrap justify-center p-4 md:p-8 font-Raleway ${raleway.className}`}>
-        <div className='my-5 text-center text-xl md:text-2xl font-chewi'>
+        <div className='my-5 text-center text-sm md:text-xl font-chewi'>
             <Link className=' text-white text-4xl hover:underline transition duration-500' href="/">Les Belles Branches</Link>
 
             <ul className='flex justify-center my-5 gap-5'>

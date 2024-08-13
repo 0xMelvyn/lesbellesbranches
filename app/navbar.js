@@ -20,9 +20,14 @@ const Navbar = () => {
   
     return (
         <nav className={`flex m-4 text-2xl font-Raleway ${raleway.className}`}>
-            <div className="flex ml-4">
+            <div className="hidden lg:flex ml-4">
               <Link href="/">
                 <Image src={Logo} alt='Logo' width={200}/>
+              </Link>
+            </div>
+            <div className="flex lg:hidden ml-4">
+              <Link href="/">
+                <Image src={Logo} alt='Logo' width={150}/>
               </Link>
             </div>
             <div className="hidden lg:flex flex-1 items-center justify-end">
