@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { Raleway } from '@next/font/google';
 
 const raleway = Raleway({
@@ -20,15 +20,15 @@ const Footer = () => {
                 <li><Link className='text-white hover:underline transition duration-500' href="/tarifs">Tarifs</Link></li>
                 <li><Link className='text-white hover:underline transition duration-500' href="/propos">À propos</Link></li>
                 <li><Link className='text-white hover:underline transition duration-500' href="/faq">FAQ</Link></li>
-                <li><Link className='text-white hover:underline transition duration-500' href="/rdv">Contact</Link></li>
+                <li><Link className='text-white hover:underline transition duration-500' href="https://lj.reservio.com/" target='_blank'>Prendre RDV</Link></li>
 
 
             </ul>
 
             <div className='flex justify-center text-center text-2xl my-5 gap-5'>
                 <Link className='text-white hover:underline transition duration-500' href="https://www.instagram.com/lesbellesbranches/" target='_blank'><FaInstagram /></Link>
-                <Link className='text-white hover:underline transition duration-500' href="https://www.youtube.com/@lulussweetworld" target='_blank'><FaYoutube /></Link>
-                <Link className='text-white hover:underline transition duration-500' href="https://www.tiktok.com/@lulussweetworld" target='_blank'><FaTiktok /></Link>
+                <Link className='text-white hover:underline transition duration-500' href="https://www.linkedin.com/company/les-belles-branches/" target='_blank'><FaLinkedin /></Link>
+                <Link className='text-white hover:underline transition duration-500' href="mailto:bonjour@lesbellesbranches.fr" target='_blank'><FaEnvelope /></Link>
             </div>
 
             <div className='grid text-center text-white'>

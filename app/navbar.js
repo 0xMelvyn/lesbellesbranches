@@ -19,7 +19,7 @@ const Navbar = () => {
     };
   
     return (
-        <nav className={`flex m-4 text-2xl font-Raleway ${raleway.className}`}>
+        <nav className={`flex m-4 pb-1 text-2xl font-Raleway ${raleway.className}`}>
             <div className="hidden lg:flex ml-4">
               <Link href="/">
                 <Image src={Logo} alt='Logo' width={200}/>
@@ -43,7 +43,7 @@ const Navbar = () => {
               <Link href="/faq" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
                 FAQ
               </Link>
-              <Link href="/rdv" className='text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105'>
+              <Link href="https://lj.reservio.com/" target='_blank' className='text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105'>
                 Prendre RDV
               </Link>
             </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                     <Link href="/faq" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
                         FAQ
                     </Link>
-                    <Link href="/rdv" className='py-2 text-lg text-center bg-mustard transition duration-300 ease-in-out text-cool rounded-full px-4 hover:scale-105' onClick={() => setIsOpen(false)}>
+                    <Link href="https://lj.reservio.com/" target='_blank' className='py-2 text-lg text-center bg-mustard transition duration-300 ease-in-out text-cool rounded-full px-4 hover:scale-105' onClick={() => setIsOpen(false)}>
                         Prendre RDV
                     </Link>
                 </div>
