@@ -9,7 +9,6 @@ import glasses from "../public/glasses.png";
 import reviews from "../public/reviews.png";
 import jojo from "../public/jojo.png";
 import lolo from "../public/lolo.png";
-import arrow from "../public/arrow.png";
 import { Raleway } from '@next/font/google';
 
 const raleway = Raleway({
@@ -98,7 +97,7 @@ export default function Home() {
       <section ref={sectionRef} className={`my-20 font-Raleway ${raleway.className}`}>
 
         <p className='flex justify-center text-6xl mb- text-center'>Qui sommes nous ?</p>
-        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
+        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
           <div className="lg:w-1/12"></div>
           <div className="lg:w-1/6 bg-mustard p-2 rounded-t-3xl lg:rounded-e-none lg:rounded-l-3xl flex items-center">
             <Image src={lolo} alt="Laurainne" className="rounded-3xl" />
@@ -113,7 +112,7 @@ export default function Home() {
           <div className="lg:w-1/6"></div>
         </div>
 
-        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity duration-500 ease-in-out ${animateRight ? 'opacity-100 animate-slide-in-right' : 'opacity-0'}`}>
+        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateRight ? 'opacity-100 animate-slide-in-right' : 'opacity-0'}`}>
           <div className="w-1/6"></div>
           <div className="w-1/6"></div>
           <div className="w-1/12"></div>
