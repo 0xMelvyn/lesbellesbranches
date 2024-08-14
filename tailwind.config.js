@@ -11,6 +11,7 @@ module.exports = {
         mustard: '#D4B30E',
         cool: '#F8F7F6',
         brique: '#93583A',
+        antra: '#4A4A4A',
       },
     },
   },
