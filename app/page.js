@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       <section className={`font-Raleway ${raleway.className}`}>
-        <div className='grid lg:flex mb-20 justify-around'>
+        <div className='hidden lg:flex mb-20 justify-around'>
           <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
             <div className="hidden lg:block">
               <Image src={flag} width={350} alt='Drapeau Français' />
@@ -90,6 +90,34 @@ export default function Home() {
               <Image src={glasses} width={275} alt='Lunettes' />
             </div>
             <h1 className='flex pt-2 justify-center text-2xl mb-2 text-center'>Sur-mesure</h1>
+          </div>
+        </div>
+
+        <div className='lg:hidden mb-20 justify-center'>
+          <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
+            <div className="flex justify-center">
+              <Image src={flag} width={150} alt='Drapeau Français' />
+            </div>
+            <h1 className='flex pt-2 justify-center text-2xl mb-2 text-center'>100% Français</h1>
+          </div>
+
+          <div className='flex justify-around'>
+
+          <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
+          <div className="flex justify-center">
+              <Image src={earth} width={150} alt='Drapeau Français' />
+            </div>
+            <div className=''>
+              <h1 className='flex pt-2 justify-center text-2xl text-center'>En materiaux</h1>
+              <h1 className='flex justify-center text-2xl mb-2 text-center'>recyclés</h1>
+              </div>
+            </div>
+
+            <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
+                <Image src={glasses} width={150} alt='Lunettes'/>
+              <h1 className='flex pt-2 justify-center text-2xl mb-2 text-center'>Sur-mesure</h1>
+            </div>
+
           </div>
         </div>
       </section>
