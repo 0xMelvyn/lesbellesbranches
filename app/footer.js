@@ -1,17 +1,9 @@
 import Link from 'next/link';
 import { FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa";
-import { Raleway } from '@next/font/google';
-
-const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
-
 
 const Footer = () => {
   return (
-    <footer className={`flex bg-brique items-center flex-wrap justify-center p-4 md:p-8 font-Raleway ${raleway.className}`}>
+    <footer className="flex bg-brique items-center flex-wrap justify-center p-4 md:p-8">
         <div className='my-5 text-center text-sm md:text-xl font-chewi'>
             <Link className=' text-white text-4xl hover:underline transition duration-500' href="/">Les Belles Branches</Link>
 

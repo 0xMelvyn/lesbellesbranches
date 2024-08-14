@@ -1,16 +1,9 @@
 import React from "react";
 import Accordion from "./accordion";
-import { Raleway } from '@next/font/google';
-
-const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
 
 const FAQ = () => {
   return (
-    <div className={`bg-cool py-10 font-Raleway ${raleway.className}`}>
+    <div className="bg-cool py-10">
       <h1 className="text-3xl font-bold mb-10 text-center">FAQ</h1>
       <div className="p-4 mx-5 lg:mx-20 bg-white rounded-lg">
       <Accordion

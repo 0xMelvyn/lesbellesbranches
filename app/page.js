@@ -7,48 +7,9 @@ import flag from "../public/flag.png";
 import earth from "../public/earth.png";
 import glasses from "../public/glasses.png";
 import reviews from "../public/reviews.png";
-import jojo from "../public/jojo.png";
-import lolo from "../public/lolo.png";
-import { Raleway } from '@next/font/google';
-
-const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
 
 export default function Home() {
-  const sectionRef = useRef(null);
-  const [animateLeft, setAnimateLeft] = useState(false);
-  const [animateRight, setAnimateRight] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setAnimateLeft(true);
-            setAnimateRight(true);
-            observer.unobserve(entry.target); // Stop observing after the first trigger if desired
-          }
-        });
-      },
-      {
-        threshold: 0.1, // Adjust this value as needed
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
+  
   return (
     <main>
       <section>
@@ -60,7 +21,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`font-Raleway ${raleway.className}`}>
+      <section>
         <div className='hidden lg:flex mb-20 justify-around'>
           <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
             <div className="hidden lg:block">
@@ -122,48 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={sectionRef} className={`my-20 font-Raleway ${raleway.className}`}>
-
-        <p className='flex justify-center text-6xl mb- text-center'>Qui sommes nous ?</p>
-        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
-          <div className="lg:w-1/12"></div>
-          <div className="lg:w-1/6 bg-mustard p-2 rounded-t-3xl lg:rounded-e-none lg:rounded-l-3xl flex items-center">
-            <Image src={lolo} alt="Laurainne" className="rounded-3xl" />
-          </div>
-          <div className="lg:w-2/6 flex lg:pr-20">
-          <div className='flex items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-left lg:text-2xl rounded-b-3xl lg:rounded-r-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          </div>
-          <div className="lg:w-1/6"></div>
-        </div>
-
-        <div className={`lg:flex my-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateRight ? 'opacity-100 animate-slide-in-right' : 'opacity-0'}`}>
-          <div className="w-1/6"></div>
-          <div className="w-1/6"></div>
-          <div className="w-1/12"></div>
-          <div className="lg:w-2/6 flex lg:pl-20">
-          <div className='hidden lg:flex items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-right lg:text-2xl rounded-b-3xl lg:rounded-l-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          </div>
-          <div className="lg:w-1/6 bg-mustard p-2 rounded-t-3xl lg:rounded-s-none lg:rounded-e-none lg:rounded-r-3xl flex items-center">
-            <Image src={jojo} alt="Joël" className="rounded-3xl" />
-          </div>
-          <div className='flex lg:hidden items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-right lg:text-2xl rounded-b-3xl lg:rounded-l-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          <div className="w-1/12"></div>
-        </div>
-      </section>
-
-      <section className={`my-10 lg:flex font-Raleway ${raleway.className}`}>
+      <section className="my-10 lg:flex">
         <div className="flex justify-center lg:w-1/2">
           <a href="https://www.google.fr/search?sca_esv=47a906e9dc93da55&tbm=lcl&sxsrf=ADLYWILXdGMqobmmFsg4NXpchAGAwn1s-w:1723578486144&q=Les+Belles+Branches+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNLc0MDG3MDU2MjW0NDM3sbA0NtrAyPiKUcIntVjBKTUnB0QVJeYlZwAZjmWZxYtYcUoBAA9fcH5RAAAA&rldimm=17904785325196748932&hl=fr-FR&sa=X&ved=2ahUKEwi00aKb3vKHAxWWVqQEHYhKHacQ9fQKegQIMxAF&biw=1440&bih=725&dpr=2#lkt=LocalPoiReviews" target='_blank'>
             <Image src={reviews} alt="Avis" width={500} />

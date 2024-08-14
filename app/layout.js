@@ -2,6 +2,13 @@ import React from 'react';
 import "./globals.css";
 import Navbar from './navbar';
 import Footer from './footer';
+import { Raleway } from '@next/font/google';
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: "Les Belles Branches",
@@ -10,8 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="fr">
+      <body className={`font-Raleway ${raleway.className}`}>
         <Navbar />
         {children}
         <Footer />

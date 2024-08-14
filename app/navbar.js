@@ -3,13 +3,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../public/logo.png';
-import { Raleway } from '@next/font/google';
-
-const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +12,7 @@ const Navbar = () => {
     };
   
     return (
-        <nav className={`flex m-4 pb-1 text-2xl font-Raleway ${raleway.className}`}>
+        <nav className="flex m-4 pb-1 text-2xl">
             <div className="hidden lg:flex ml-4">
               <Link href="/">
                 <Image src={Logo} alt='Logo' width={200}/>
