@@ -25,16 +25,16 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex flex-1 items-center justify-end">
               <Link href="/produits" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                Nos produits
+                Galerie
               </Link>
               <Link href="/tarifs" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                Tarifs
+                Présentation
               </Link>
               <Link href="/propos" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                À propos
+                Nos racines
               </Link>
               <Link href="/aide" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                Une question ?
+                Et pourquoi ?
               </Link>
               <Link href="https://lj.reservio.com/" target='_blank' className='text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105'>
                 Prendre RDV
@@ -56,13 +56,13 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <Link href="/produits" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
-                        Nos produits
+                        Galerie
                     </Link>
                     <Link href="/tarifs" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
-                        Tarifs
+                        Présentation
                     </Link>
                     <Link href="/propos" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
-                        À propos
+                        Nos racines
                     </Link>
                     <Link href="/aide" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
                         Une question ?

@@ -9,13 +9,13 @@ const Footer = () => {
 
             <ul className='flex justify-center my-5 gap-5'>
               <div className='lg:flex gap-5'>
-              <li><Link className='text-white hover:underline transition duration-500' href="/produits">Nos produits</Link></li>
-              <li><Link className='text-white hover:underline transition duration-500' href="/propos">À propos</Link></li>
-                <li><Link className='text-white hover:underline transition duration-500' href="/tarifs">Tarifs</Link></li>
+              <li><Link className='text-white hover:underline transition duration-500' href="/produits">Galerie</Link></li>
+              <li><Link className='text-white hover:underline transition duration-500' href="/tarifs">Présentation</Link></li>
+                <li><Link className='text-white hover:underline transition duration-500' href="/propos">Nos racines</Link></li>
               </div>
               <div className='lg:flex gap-5'>
               <li><Link className='text-white hover:underline transition duration-500' href="https://lj.reservio.com/" target='_blank'>Prendre RDV</Link></li>
-              <li><Link className='text-white hover:underline transition duration-500' href="/faq">Une question ?</Link></li>
+              <li><Link className='text-white hover:underline transition duration-500' href="/aide">Une question ?</Link></li>
               </div>
             </ul>
 
