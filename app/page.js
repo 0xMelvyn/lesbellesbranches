@@ -7,6 +7,10 @@ import flag from "../public/flag.png";
 import earth from "../public/earth.png";
 import glasses from "../public/glasses.png";
 import reviews from "../public/reviews.png";
+import promo from "../public/promo.png";
+import produit1 from "../public/produit1.png";
+import produit2 from "../public/produit2.png";
+import produit3 from "../public/produit3.png";
 
 export default function Home() {
   
@@ -82,6 +86,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className='bg-cool lg:flex'>
+  <div className="lg:flex">
+    <div className='relative bg-mustard'>
+      <Image src={promo} width={330} className="h-full object-contain mx-auto"></Image>
+      <a href="/tarifs" className='bg-black text-white absolute inset-0 flex mt-24 mx-auto justify-center w-max h-max rounded-xl px-2 hover:scale-105 transition duration-300 ease-in-out'>
+        En savoir plus
+      </a>
+    </div>
+  </div>
+  <div>
+    <div className='pt-5 mx-8'>
+      <p className='text-5xl text-center'>Lunettes tendances</p>
+      <br />
+      <div className="grid grid-cols-3 gap-4">
+        {/* Product Card 1 */}
+        <div className="bg-white rounded-lg shadow-md p-4">
+          <Image src={produit1} width={315} alt="Produit 2" className="object-cover rounded-md" />
+          <h3 className="text-xl font-bold mt-2 flex justify-center">Wayfarer</h3>
+          <a href="/product2" className="text-mustard flex justify-center">280€</a>
+        </div>
+        
+        {/* Product Card 2 */}
+        <div className="bg-white rounded-lg shadow-md p-4">
+          <Image src={produit2} width={315} alt="Produit 2" className="object-cover rounded-md" />
+          <h3 className="text-xl font-bold mt-2 flex justify-center">Aviator</h3>
+          <a href="/product2" className="text-mustard flex justify-center">450€</a>
+        </div>
+        
+        {/* Product Card 3 */}
+        <div className="bg-white rounded-lg shadow-md p-4">
+          <Image src={produit3} width={315} alt="Produit 2" className="object-cover rounded-md" />
+          <h3 className="text-xl font-bold mt-2 flex justify-center">CatEye</h3>
+          <a href="/product2" className="text-mustard flex justify-center">300€</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section className="my-10 lg:flex">
         <div className="flex justify-center lg:w-1/2">
