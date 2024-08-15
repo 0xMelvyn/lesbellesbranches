@@ -97,7 +97,7 @@ export default function Home() {
     </div>
   </div>
   <div>
-    <div className='pt-5 mx-8'>
+    <div className='pt-5 mx-4 lg:mx-8'>
       <p className='text-5xl text-center'>Lunettes tendances</p>
       <br />
       <div className="grid grid-cols-3 gap-4">
