@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsEnvelopeFill, BsTelephone, BsInstagram } from 'react-icons/bs';
 
-export default function contact({ darkMode = false }) {
+export default function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -20,7 +20,7 @@ export default function contact({ darkMode = false }) {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: darkMode ? "dark" : "light",
+            theme: "light", // Default theme set to light
         });
 
         emailjs.sendForm('service_qaggn0i', 'template_f3ul5tq', form.current, 'SPdoern9JLwWLz_FV')
