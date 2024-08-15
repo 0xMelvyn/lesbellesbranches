@@ -15,7 +15,6 @@ const Footer = () => {
               </div>
               <div className='lg:flex gap-5'>
               <li><Link className='text-white hover:underline transition duration-500' href="https://lj.reservio.com/" target='_blank'>Prendre RDV</Link></li>
-              <li><Link className='text-white hover:underline transition duration-500' href="/contact">Contact</Link></li>
               <li><Link className='text-white hover:underline transition duration-500' href="/faq">FAQ</Link></li>
               </div>
             </ul>

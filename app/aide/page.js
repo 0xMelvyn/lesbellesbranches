@@ -1,9 +1,10 @@
 import React from "react";
 import Accordion from "./accordion";
+import ContactForm from './contact';
 
 const FAQ = () => {
   return (
-    <div className="bg-cool py-10">
+    <div className="bg-cool pt-10">
       <h1 className="text-3xl font-bold mb-10 text-center">FAQ</h1>
       <div className="p-4 mx-5 lg:mx-20 bg-white rounded-lg">
       <Accordion
@@ -22,6 +23,7 @@ const FAQ = () => {
         title="Est-il possible de personnaliser mes lunettes ?"
         answer="Oui, nous offrons des options de personnalisation pour que vos lunettes reflètent parfaitement votre style unique. Choisissez parmi différents matériaux, couleurs et formes." />
       </div>
+      <ContactForm/>
     </div>
   );
 };

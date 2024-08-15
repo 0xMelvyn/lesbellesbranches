@@ -33,8 +33,8 @@ const Navbar = () => {
               <Link href="/propos" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
                 À propos
               </Link>
-              <Link href="/faq" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                FAQ
+              <Link href="/aide" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
+                Une question ?
               </Link>
               <Link href="https://lj.reservio.com/" target='_blank' className='text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105'>
                 Prendre RDV
@@ -64,8 +64,8 @@ const Navbar = () => {
                     <Link href="/propos" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
                         À propos
                     </Link>
-                    <Link href="/faq" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
-                        FAQ
+                    <Link href="/aide" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
+                        Une question ?
                     </Link>
                     <Link href="https://lj.reservio.com/" target='_blank' className='py-2 text-lg text-center bg-mustard transition duration-300 ease-in-out text-cool rounded-full px-4 hover:scale-105' onClick={() => setIsOpen(false)}>
                         Prendre RDV
