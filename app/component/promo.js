@@ -1,9 +1,12 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import promo from "../../public/promo.png";
 import produit1 from "../../public/produit1.png";
 import produit2 from "../../public/produit2.png";
 import produit3 from "../../public/produit3.png";
+import React from "react";
+import { useSpringCarousel } from 'react-spring-carousel';
 
 const productData = [
   {
@@ -27,6 +30,32 @@ const productData = [
 ];
 
 const Promo = () => {
+  const { carouselFragment } = useSpringCarousel({
+    items: productData.map((product, index) => ({
+      id: `item-${index + 1}`,
+      renderItem: (
+        <Link key={index} href="/tarifs" passHref>
+          <div className="bg-white w-screen rounded-lg shadow-md p-4 cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+            <Image
+              src={product.src}
+              width={315}
+              alt={product.alt}
+              className="object-cover mx-auto rounded-md"
+            />
+            <h3 className="text-xl font-bold mt-2 flex justify-center">
+              {product.title}
+            </h3>
+            <p className="text-mustard flex justify-center">
+              {product.price}
+            </p>
+          </div>
+        </Link>
+      ),
+    })),
+    withLoop: true, // Enables looping
+    itemsPerSlide: 1, // Display 2 items at a time
+  });
+
   return (
     <section className="bg-cool lg:flex">
       <div className="lg:flex">
@@ -48,11 +77,16 @@ const Promo = () => {
         <div className="pt-5 pb-5 lg:pb-0 mx-4 lg:mx-8">
           <p className="text-5xl text-center">Lunettes tendances</p>
           <br />
-          <div className="grid grid-cols-3 gap-4">
+          {/* Mobile: Carousel */}
+          <div className="block lg:hidden w-screen">
+            {carouselFragment}
+          </div>
+          {/* Desktop: Grid */}
+          <div className="hidden lg:grid grid-cols-3 gap-4">
             {productData.map((product, index) => (
               <Link
                 key={index}
-                href="/tarifs" // Redirection vers la page des tarifs
+                href="/tarifs"
                 passHref
               >
                 <div className="bg-white rounded-lg shadow-md p-4 cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
