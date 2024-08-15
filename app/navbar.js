@@ -28,7 +28,7 @@ const Navbar = () => {
                 Galerie
               </Link>
               <Link href="/tarifs" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
-                Présentation
+                Presentation
               </Link>
               <Link href="/propos" className='hover:text-mustard transition duration-300 ease-in-out mx-4'>
                 Nos racines
@@ -59,7 +59,7 @@ const Navbar = () => {
                         Galerie
                     </Link>
                     <Link href="/tarifs" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
-                        Présentation
+                        Presentation
                     </Link>
                     <Link href="/propos" className='py-2 text-lg hover:text-mustard transition duration-300 ease-in-out' onClick={() => setIsOpen(false)}>
                         Nos racines

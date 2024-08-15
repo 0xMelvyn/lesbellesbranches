@@ -18,7 +18,7 @@ export default function Home() {
     <main>
       <section>
         <div className="hidden lg:flex">
-          <Image src={Accueil} alt='Accueil' width={1500} />
+          <Image src={Accueil} alt='Accueil' className='w-screen' width={1500} />
         </div>
         <div className="flex lg:hidden">
           <Image src={AccueilM} alt='Accueil' width={1500} />
@@ -96,7 +96,7 @@ export default function Home() {
       </a>
     </div>
   </div>
-  <div>
+  <div className='flex mx-auto'>
     <div className='pt-5 pb-5 lg:pb-0 mx-4 lg:mx-8'>
       <p className='text-5xl text-center'>Lunettes tendances</p>
       <br />

@@ -3,14 +3,14 @@ import { FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex bg-brique items-center flex-wrap justify-center p-4 md:p-8">
+    <footer className="flex bg-black items-center flex-wrap justify-center p-4 md:p-8">
         <div className='my-5 text-center text-sm md:text-xl font-chewi'>
             <Link className=' text-white text-4xl hover:underline transition duration-500' href="/">Les Belles Branches</Link>
 
             <ul className='flex justify-center my-5 gap-5'>
               <div className='lg:flex gap-5'>
               <li><Link className='text-white hover:underline transition duration-500' href="/produits">Galerie</Link></li>
-              <li><Link className='text-white hover:underline transition duration-500' href="/tarifs">Présentation</Link></li>
+              <li><Link className='text-white hover:underline transition duration-500' href="/tarifs">Presentation</Link></li>
                 <li><Link className='text-white hover:underline transition duration-500' href="/propos">Nos racines</Link></li>
               </div>
               <div className='lg:flex gap-5'>
