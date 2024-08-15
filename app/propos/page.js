@@ -74,7 +74,7 @@ export default function Home() {
         <div className={`flex flex-col lg:flex-row lg:mr-80 mb-8 transition-opacity lg:duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
   <div className="bg-mustard rounded-e-full shadow-lg p-4 flex flex-col lg:flex-row items-center">
     <div className="mb-4 lg:mb-0 lg:pr-8 text-justify">
-      <h1 className="text-2xl lg:text-3xl font-bold mb-6 lg:px-7 underline">Lorraine</h1>
+      <h1 className="text-2xl lg:text-3xl font-bold mb-6 lg:px-7 underline">Laurène</h1>
       <p className='text-lg pr-14 lg:px-7 lg:text-xl'>
         Diplômée en optique et passionnée par le design, je me consacre à la création de lunettes sur mesure qui allient confort, esthétique et fonctionnalité. Mon objectif est de vous accompagner dans le choix de montures et de verres qui subliment votre regard tout en répondant parfaitement à vos besoins visuels.
       </p>
