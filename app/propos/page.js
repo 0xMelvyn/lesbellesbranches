@@ -63,49 +63,65 @@ export default function Home() {
               </div>
             </div>
             <div className="pt-6 lg:pt-0 lg:w-1/2">
-              <p className="text-2xl text-justify m-5 lg:m-0 lg:mr-14">Nous valorisons le savoir-faire français en fabriquant nos lunettes en France, garantissant ainsi une qualité artisanale exceptionnelle. En utilisant des matériaux recyclés, nous affirmons notre engagement envers une production durable et respectueuse de l'environnement. De plus, notre service de sur mesure vous permet de personnaliser chaque paire pour qu'elle soit parfaitement adaptée à vos besoins et à votre style, tout en contribuant à un avenir plus vert.</p>
+              <p className="text-2xl lg:text-justify m-5 lg:m-0 lg:mr-14">Nous valorisons le <span className='bg-mustard'>savoir-faire</span> français en fabriquant nos lunettes en France, garantissant ainsi une qualité artisanale exceptionnelle. En utilisant des matériaux recyclés, nous affirmons notre engagement envers une production <span className='bg-mustard'>durable</span> et respectueuse de l'environnement. De plus, notre service de <span className='bg-mustard'>sur mesure</span> vous permet de personnaliser chaque paire pour qu'elle soit parfaitement adaptée à vos besoins et à votre style, tout en contribuant à un avenir plus vert.</p>
             </div>
           </section>
 
           <section ref={sectionRef} className="mt-20 pb-20">
 
         <p className='flex mb-20 justify-center text-6xl text-center'>Qui sommes nous ?</p>
-        <div className={`lg:flex mt-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
-          <div className="lg:w-1/12"></div>
-          <div className="lg:w-1/6 bg-mustard p-2 rounded-t-3xl lg:rounded-e-none lg:rounded-l-3xl flex items-center">
-            <Image src={lolo} alt="Laurainne" className="rounded-3xl" />
-          </div>
-          <div className="lg:w-2/6 flex lg:pr-20">
-          <div className='flex items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-left lg:text-2xl rounded-b-3xl lg:rounded-r-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          </div>
-          <div className="lg:w-1/6"></div>
-        </div>
 
-        <div className={`lg:flex mt-8 p-2 lg:p-0 transition-opacity lg:duration-500 ease-in-out ${animateRight ? 'opacity-100 animate-slide-in-right' : 'opacity-0'}`}>
-          <div className="w-1/6"></div>
-          <div className="w-1/6"></div>
-          <div className="w-1/12"></div>
-          <div className="lg:w-2/6 flex lg:pl-20">
-          <div className='hidden lg:flex items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-right lg:text-2xl rounded-b-3xl lg:rounded-l-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          </div>
-          <div className="lg:w-1/6 bg-mustard p-2 rounded-t-3xl lg:rounded-s-none lg:rounded-e-none lg:rounded-r-3xl flex items-center">
-            <Image src={jojo} alt="Joël" className="rounded-3xl" />
-          </div>
-          <div className='flex lg:hidden items-center'>
-          <p className="bg-mustard text-black p-3 lg:p-10 text-xl text-justify lg:text-right lg:text-2xl rounded-b-3xl lg:rounded-l-full lg:px-10">
-              Je crée des lunettes sur mesure alliant <span className='text-cool'>artisanat</span> et innovation pour sublimer votre <span className='text-cool'>regard</span> avec passion et expertise.
-            </p>
-          </div>
-          <div className="w-1/12"></div>
-        </div>
+        <div className={`flex flex-col lg:flex-row lg:mr-80 mb-8 transition-opacity lg:duration-500 ease-in-out ${animateLeft ? 'opacity-100 animate-slide-in-left' : 'opacity-0'}`}>
+  <div className="bg-mustard rounded-e-full shadow-lg p-4 flex flex-col lg:flex-row items-center">
+    <div className="mb-4 lg:mb-0 lg:pr-8 text-justify">
+      <h1 className="text-2xl lg:text-3xl font-bold mb-6 lg:px-7">Lorraine</h1>
+      <p className='text-lg pr-14 lg:px-7 lg:text-xl'>
+        Diplômée en optique et passionnée par le design, je me consacre à la création de lunettes sur mesure qui allient confort, esthétique et fonctionnalité. Mon objectif est de vous accompagner dans le choix de montures et de verres qui subliment votre regard tout en répondant parfaitement à vos besoins visuels.
+      </p>
+    </div>
+    <div className="flex justify-center">
+      <div className="relative w-40 h-40 lg:w-60 lg:h-60 rounded-full overflow-hidden border-4 border-mustard">
+        <Image
+          src={lolo}
+          alt='Lorainne'
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div className={`flex flex-col lg:flex-row lg:ml-80 transition-opacity lg:duration-500 ease-in-out ${animateRight ? 'opacity-100 animate-slide-in-right' : 'opacity-0'}`}>
+  <div className="bg-mustard rounded-s-full shadow-lg p-4 flex flex-col lg:flex-row items-center">
+  <div className="hidden lg:flex justify-center">
+      <div className="relative w-40 h-40 lg:w-60 lg:h-60 rounded-full overflow-hidden border-4 border-mustard">
+        <Image
+          src={jojo}
+          alt='Joël'
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </div>
+    <div className="mb-4 lg:mb-0 lg:pr-8 text-justify">
+      <h1 className="text-2xl lg:text-3xl font-bold text-right mb-6 px-7">Joël</h1>
+      <p className='text-lg pl-14 lg:px-7 lg:text-xl'>
+      Fort de plus de 10 ans d'expérience dans le domaine de l'optique, je mets mon expertise technique et ma passion pour l’art du lunetier au service de mes clients. Mon rôle est de vous conseiller et de vous accompagner dans le choix de lunettes de vue, de lentilles de contact ou de lunettes de soleil.</p>
+    </div>
+    <div className="flex justify-center">
+      <div className="relative lg:hidden w-40 h-40 lg:w-60 lg:h-60 rounded-full overflow-hidden border-4 border-mustard">
+        <Image
+          src={jojo}
+          alt='Joël'
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
       </section>
       </main>
     );
