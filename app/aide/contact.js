@@ -36,7 +36,7 @@ export default function contact({ darkMode = false }) {
     return (
         <section id="contact" className="bg-white mt-20">
             <ToastContainer />
-            <div className="px-20">
+            <div className="px-5 lg:px-20">
                 <h3 className='text-3xl py-10 flex justify-center text-center font-bold'>Contactez-nous</h3>
                 <div className="flex flex-col gap-10 py-5 lg:flex-row lg:flex-wrap">
                     <div className='flex flex-col text-center basis-1/8 flex-1 gap-10 leading-7'>
