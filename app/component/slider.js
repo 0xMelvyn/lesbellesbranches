@@ -76,7 +76,7 @@ const Slider = () => {
       <div className="overflow-hidden">
         {carouselFragment}
       </div>
-      <div className="absolute inset-0 flex justify-between items-center px-4">
+      <div className="hidden lg:absolute inset-0 lg:flex justify-between items-center px-4">
         <button
           onClick={slideToPrevItem}
           className="hidden lg:block bg-black opacity-40 hover:opacity-60 transition duration-300 ease-in-out text-white rounded-full p-2 focus:outline-none"

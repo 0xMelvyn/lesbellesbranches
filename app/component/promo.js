@@ -30,7 +30,7 @@ const productData = [
 ];
 
 const Promo = () => {
-  const { carouselFragment } = useSpringCarousel({
+  const { carouselFragment, slideToNextItem } = useSpringCarousel({
     items: productData.map((product, index) => ({
       id: `item-${index + 1}`,
       renderItem: (
@@ -54,6 +54,14 @@ const Promo = () => {
     withLoop: true, // Enables looping
     itemsPerSlide: 2, // Display 1 item at a time
   });
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      slideToNextItem(); // Passe à l'item suivant automatiquement
+    }, 4000); // Intervalle en millisecondes (3 secondes)
+
+    return () => clearInterval(interval); // Nettoie l'intervalle lors du démontage
+  }, [slideToNextItem]);
 
   return (
     <section className="bg-cool lg:flex flex-col lg:flex-row">

@@ -27,7 +27,7 @@ const Footer = () => {
                 className="text-white hover:underline transition duration-500"
                 href="/tarifs"
               >
-                Présentation
+                Presentation
               </Link>
             </li>
             <li>
