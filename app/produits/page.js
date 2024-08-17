@@ -12,7 +12,7 @@ const Gallery = ({ images }) => {
             alt={`Image ${index}`}
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0 hover:scale-105 transition duration-300 ease-in-out"
+            className="absolute rounded-2xl inset-0 hover:scale-105 transition duration-300 ease-in-out"
           />
         </div>
       ))}
