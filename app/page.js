@@ -1,31 +1,14 @@
 import Image from "next/image";
+import Slider from "./component/slider";
 import Resume from "./component/resume";
 import Promo from "./component/promo";
-import Accueil from "../public/accueil.png";
-import AccueilM from "../public/accueilm.png";
 import reviews from "../public/reviews.png";
 
 export default function Home() {
   return (
     <main>
-      <section>
-        <div className="hidden lg:flex">
-          <Image
-            src={Accueil}
-            alt="Accueil"
-            className="w-screen"
-            width={1500}
-          />
-        </div>
-        <div className="flex lg:hidden">
-          <Image
-            src={AccueilM}
-            alt="Accueil"
-            width={1500}
-          />
-        </div>
-      </section>
 
+      <Slider/>
       <Resume />
       <Promo />
 
@@ -43,9 +26,9 @@ export default function Home() {
             />
           </a>
         </div>
-        <div className="lg:w-1/2 lg:flex mt-5 lg:mt-0">
+        <div className="lg:w-1/2 lg:flex justify-center mt-5 lg:mt-0">
           <p className="flex justify-center text-center items-center text-3xl">
-            N'hésite pas à consulter ou laisser un avis !
+            Vos avis nous font grandir !
           </p>
         </div>
       </section>

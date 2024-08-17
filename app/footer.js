@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -43,19 +43,19 @@ const Footer = () => {
             <li>
               <Link
                 className="text-white hover:underline transition duration-500"
-                href="https://lj.reservio.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/aide"
               >
-                Prendre RDV
+                Et pourquoi ?
               </Link>
             </li>
             <li>
               <Link
                 className="text-white hover:underline transition duration-500"
-                href="/aide"
+                href="https://lj.reservio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Une question ?
+                Prendre RDV
               </Link>
             </li>
           </div>
@@ -77,6 +77,14 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedin />
+          </Link>
+          <Link
+            className="text-white hover:underline transition duration-500"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
           </Link>
           <Link
             className="text-white hover:underline transition duration-500"

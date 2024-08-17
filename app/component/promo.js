@@ -35,7 +35,7 @@ const Promo = () => {
       id: `item-${index + 1}`,
       renderItem: (
         <Link key={index} href="/tarifs" passHref>
-          <div className="bg-white mx-2 rounded-lg shadow-md p-4 cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+          <div className="bg-white mx-2 rounded-lg shadow-md p-4 cursor-pointer">
             <Image
               src={product.src}
               alt={product.alt}
