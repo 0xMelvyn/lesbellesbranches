@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // Composant Gallery
 const Gallery = ({ images }) => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 py-4 p-20">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 pt-4 pb-10 px-5 lg:px-20">
       {images.map((src, index) => (
         <div key={index} className="relative w-full h-0 pb-[100%]">
           <img
@@ -12,7 +12,7 @@ const Gallery = ({ images }) => {
             alt={`Image ${index}`}
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0"
+            className="absolute inset-0 hover:scale-105 transition duration-300 ease-in-out"
           />
         </div>
       ))}
