@@ -36,8 +36,7 @@ export default function Home() {
             <br />
             <p className="hidden lg:block text-lg">Verres et montures fabriqués à la main en France.
             pensés pour durer</p>
-            <p className="block lg:hidden mx-5 text-xl text-justify">Verres et montures fabriqués à la main en France.
-            pensés pour durer</p>
+            <p className="block lg:hidden mx-5 text-xl text-justify">Verres et montures fabriqués à la main en France pensés pour durer</p>
           </div>
         <div className="lg:w-1/2">
         <div className="flex justify-center items-center">
