@@ -36,9 +36,12 @@ export default function RootLayout({ children }) {
         <meta property="twitter:url" content="" />
       </Head>
       <body className={`font-Raleway ${raleway.className}`}>
+      {children}
+        {/* 
         <Navbar />
-        {children}
+        
         <Footer />
+        */}
       </body>
     </html>
   );
