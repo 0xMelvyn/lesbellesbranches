@@ -100,7 +100,7 @@ export default function Home() {
         </div>
         <div className="lg:w-1/2 lg:flex justify-center mt-5 lg:mt-0">
           <p className="flex justify-center text-center items-center text-3xl">
-            Vos avis nous font grandir !
+            Vos avis nous font grossir !
           </p>
         </div>
       </section>
