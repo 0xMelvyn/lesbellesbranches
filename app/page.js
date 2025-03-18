@@ -15,6 +15,7 @@ import { FaInstagram, FaEnvelope, FaLinkedin, FaFacebook } from 'react-icons/fa'
 export default function Home() {
   return (
     <main>
+    {/* 
       <section className="h-screen">
         <div className="flex m-4 pb-1 text-2xl">
           <div className="hidden lg:flex ml-4">
@@ -27,7 +28,7 @@ export default function Home() {
 
         <div className="lg:flex py-7 lg:py-14 bg-cool">
         <div className="lg:w-1/2 mt-7 lg:ml-14">
-            <p className="text-5xl text-center font-bold">Pssst notre site est en train de test 🌱</p>
+            <p className="text-5xl text-center font-bold">Pssst notre site est en train de pousser 🌱</p>
             <br />
             <p className="hidden lg:block text-lg">Retrouvez ici prochainement nos lunettes qui poussent dans le bon sens</p>
             <p className="block lg:hidden mx-5 text-xl text-justify">Retrouvez ici prochainement nos lunettes qui poussent dans le bon sens</p>
@@ -77,7 +78,8 @@ export default function Home() {
     </div>
   </div>
       </section>
-{/* 
+      */}
+
       <Slider/>
       <Resume />
       <Promo />
@@ -102,7 +104,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-      */}
     </main>
   );
 }
