@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="lg:flex py-7 lg:py-14 bg-cool">
         <div className="lg:w-1/2 mt-7 lg:ml-14">
-            <p className="text-5xl text-center font-bold">Pssst notre site est en train de pousser 🌱</p>
+            <p className="text-5xl text-center font-bold">Pssst notre site est en train de test 🌱</p>
             <br />
             <p className="hidden lg:block text-lg">Retrouvez ici prochainement nos lunettes qui poussent dans le bon sens</p>
             <p className="block lg:hidden mx-5 text-xl text-justify">Retrouvez ici prochainement nos lunettes qui poussent dans le bon sens</p>
