@@ -37,11 +37,9 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`font-Raleway ${raleway.className}`}>
       {children}
-        {/* 
         <Navbar />
         
         <Footer />
-        */}
       </body>
     </html>
   );
