@@ -97,7 +97,8 @@ const Footer = () => {
         </div>
 
         <div className="grid text-center text-white">
-          <small>15 Rue du Rem Saint-Etienne, 31000 Toulouse</small>
+          <small>15, rue du rempart Saint-Etienne, 31000 Toulouse</small>
+          <small>Ouvert du lundi au samedi</small>
           <small>2024 &copy; Tous droits réservés</small>
         </div>
       </div>
