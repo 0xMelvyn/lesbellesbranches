@@ -51,7 +51,7 @@ const Footer = () => {
             <li>
               <Link
                 className="text-white hover:underline transition duration-500"
-                href="https://lj.reservio.com/"
+                href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
                 target="_blank"
                 rel="noopener noreferrer"
               >
