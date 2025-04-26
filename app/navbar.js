@@ -49,7 +49,7 @@ const Navbar = () => {
           Et pourquoi ?
         </Link>
         <Link
-          href="https://lj.reservio.com/"
+          href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
           target="_blank"
           className="text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105"
         >
