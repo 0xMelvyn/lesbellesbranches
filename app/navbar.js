@@ -43,18 +43,15 @@ const Navbar = () => {
           Santé visuelle
         </Link>
         <Link
-          href="/propos"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
-        >
-            Prendre RDV
-        </Link>
-         <Link
-            href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
+          href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
             rel="noopener noreferrer"
             target="_blank"
             className="py-2 text-lg text-center bg-mustard transition duration-300 ease-in-out text-cool rounded-full px-4 hover:scale-105"
             onClick={() => setIsOpen(false)}  
-
+        >
+            Prendre RDV
+        </Link>
+        
       </div>
       <div className="lg:hidden flex flex-1 justify-end">
         <button onClick={toggleMenu} className="hover:text-mustard focus:outline-none">
