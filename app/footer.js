@@ -19,7 +19,15 @@ const Footer = () => {
                 className="text-white hover:underline transition duration-500"
                 href="/produits"
               >
-                Galerie
+                Nos racines
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white hover:underline transition duration-500"
+                href="/aide"
+              >
+                Nos montures
               </Link>
             </li>
             <li>
@@ -27,26 +35,9 @@ const Footer = () => {
                 className="text-white hover:underline transition duration-500"
                 href="/tarifs"
               >
-                Presentation
+                Santé visuelle
               </Link>
-            </li>
-            <li>
-              <Link
-                className="text-white hover:underline transition duration-500"
-                href="/propos"
-              >
-                Nos racines
-              </Link>
-            </li>
-          </div>
-          <div className="lg:flex gap-5">
-            <li>
-              <Link
-                className="text-white hover:underline transition duration-500"
-                href="/aide"
-              >
-                Et pourquoi ?
-              </Link>
+               
             </li>
             <li>
               <Link
