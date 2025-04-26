@@ -98,7 +98,7 @@ const Footer = () => {
 
         <div className="grid text-center text-white">
           <small>15, rue du rempart Saint-Etienne, 31000 Toulouse</small>
-          <small>Ouvert du lundi au samedi</small>
+          <small>05 62 71 23 26 - ouverture du lundi au samedi</small>
           <small>2024 &copy; Tous droits réservés</small>
         </div>
       </div>
