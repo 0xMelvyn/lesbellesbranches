@@ -28,30 +28,23 @@ const Navbar = () => {
           href="/produits"
           className="hover:text-mustard transition duration-300 ease-in-out mx-4"
         >
-          Galerie
-        </Link>
-        <Link
-          href="/tarifs"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
-        >
-          Presentation
-        </Link>
-        <Link
-          href="/propos"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
-        >
           Nos racines
         </Link>
         <Link
           href="/aide"
           className="hover:text-mustard transition duration-300 ease-in-out mx-4"
-        >
-          Et pourquoi ?
+        >  
+            Nos montures
         </Link>
         <Link
-          href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
-          target="_blank"
-          className="text-cool transition duration-300 ease-in-out mx-3 px-4 py-2 bg-mustard rounded-full hover:scale-105"
+          href="/tarifs"
+          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
+        >
+          Santé visuelle
+        </Link>
+        <Link
+          href="/propos"
+          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
         >
           Prendre RDV
         </Link>
@@ -126,7 +119,7 @@ const Navbar = () => {
             Une question ?
           </Link>
           <Link
-            href="https://lj.reservio.com/"
+            href="https://www.doctolib.fr/magasin-d-optique/toulouse/opticien-les-belles-branches"
             rel="noopener noreferrer"
             target="_blank"
             className="py-2 text-lg text-center bg-mustard transition duration-300 ease-in-out text-cool rounded-full px-4 hover:scale-105"
