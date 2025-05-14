@@ -92,32 +92,25 @@ const Navbar = () => {
             </svg>
           </button>
           <Link
-            href="/produits"
-            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
-            onClick={() => setIsOpen(false)}
-          >
-            Galerie
-          </Link>
-          <Link
-            href="/tarifs"
-            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
-            onClick={() => setIsOpen(false)}
-          >
-            Presentation
-          </Link>
-          <Link
-            href="/propos"
+            href="/nos-racines"
             className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
             Nos racines
           </Link>
           <Link
-            href="/aide"
+            href="/nos-montures"
             className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
-            Une question ?
+            Nos montures
+          </Link>
+          <Link
+            href="/sante-visuelle"
+            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
+            onClick={() => setIsOpen(false)}
+          >
+            Santé visuelle
           </Link>
           <Link
             href="https://lj.reservio.com/"
