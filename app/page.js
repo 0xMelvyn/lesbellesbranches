@@ -2,6 +2,7 @@ import Image from "next/image";
 import Slider from "./component/slider";
 import Resume from "./component/resume";
 import Promo from "./component/promo";
+import Recap from "./component/recap";
 import reviews from "../public/reviews.png";
 import Link from 'next/link';
 
@@ -54,10 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-5 bg-cool">
-      <h2 className="text-center text-5xl font-bold my-12">Nos valeurs, aussi solides que nos montures</h2>
-      <p className="text-xl text-center pb-80">Si vous êtes arrivés jusqu'ici, vous avez compris l'essentiels, mais un dernier rappel ne fait jamais de mal :</p>
-      </section>
+      <Recap />
 
       <section className="p-5">
       <h2 className="text-center text-5xl font-bold my-12">Passez nous voir !</h2>

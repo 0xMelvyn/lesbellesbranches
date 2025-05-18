@@ -1,82 +1,65 @@
 import Image from "next/image";
-import flag from "../../public/flag.png";
+import face from "../../public/face.png";
 import earth from "../../public/earth.png";
 import glasses from "../../public/glasses.png";
+import second from "../../public/second.png";
 
 const items = [
   {
-    src: flag,
+    src: face,
     alt: "Drapeau Français",
-    text: "100% Français",
+    text: "Montures pour petits visages adultes",
+    subtext: "Enfin des lunettes à votre taille sans passer par le rayon enfant",
   },
   {
     src: glasses,
     alt: "Lunettes",
-    text: "Sur-mesure",
+    text: "Modèles entièrement personnalisbles",
+    subtext: "Pour une paire unique, à votre image",
   },
   {
     src: earth,
     alt: "Terre",
-    text: "Seconde vie",
+    text: "Lunettes upcyclées",
+    subtext: "Design et responsables, elles ont tout bon",
   },
+  {
+  src: second,
+  alt: "Personnalisation",
+  text: "Montures secondes main",
+  subtext: (
+    <>
+      En déposant vos anciennes lunettes, vous bénéficiez d&apos;un bon d&apos;achat.{" "}<br/>
+      <span className="text-xs">
+        Elles seront revalorisées dans notre atelier pour équiper d&apos;autres personnes à petit prix.
+      </span>
+    </>
+  ),
+}
 ];
 
 const Resume = () => {
   return (
     <section className="p-5">
       <h2 className="text-center text-5xl font-bold my-12">Notre vision, changer la vôtre</h2>
-      <p className="text-xl text-center">Toutes nos montures sont sélectionnées selon des critères exigeants : matériaux durables (huile/graine de ricin, acétate de cellulose), fabrication française et circuits courts (Montauban, Albi...).<br/><br/>
-      Et parce que chaque besoin est unique, on a (vraiment) pensé à tout :</p>
-      <div className="hidden lg:flex mb-20 justify-around">
+      <p className="text-xl text-center">
+        Toutes nos montures sont sélectionnées selon des critères exigeants : matériaux durables (huile/graine de ricin, acétate de cellulose), fabrication française et circuits courts (Montauban, Albi...).<br /><br />
+        Et parce que chaque besoin est unique, on a (vraiment) pensé à tout :
+      </p>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 mb-20">
         {items.map((item, index) => (
           <div
             key={index}
-            className="mt-10 hover:scale-105 transition duration-300 ease-in-out"
+            className="hover:scale-105 transition duration-300 ease-in-out text-center"
           >
-            <div className="hidden lg:block">
-              <Image src={item.src} width={350} alt={item.alt} />
+            <div className="flex justify-center">
+              <Image src={item.src} width={200} alt={item.alt} />
             </div>
-            <div className="flex justify-center lg:hidden">
-              <Image src={item.src} width={275} alt={item.alt} />
-            </div>
-            <h1 className="flex pt-2 justify-center text-2xl mb-2 text-center">
-              {item.text}
-            </h1>
+            <h1 className="pt-4 text-2xl font-semibold">{item.text}</h1>
+            <p className="text-base text-gray-600 mt-2 leading-tight px-4">{item.subtext}</p>
           </div>
         ))}
-      </div>
-
-      <div className="lg:hidden mb-20 justify-center">
-        <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
-          <div className="flex justify-center">
-            <Image src={flag} width={150} alt="Drapeau Français" />
-          </div>
-          <h1 className="flex pt-2 justify-center text-2xl mb-2 text-center">
-            100% Français
-          </h1>
-        </div>
-
-        <div className="flex justify-around">
-          <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
-            <div className="flex justify-center">
-              <Image src={glasses} width={150} alt="Terre" />
-            </div>
-            <div className="">
-              <h1 className="flex pt-2 justify-center text-2xl text-center">
-                Sur mesure
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-10 hover:scale-105 transition duration-300 ease-in-out">
-            <div className="flex justify-center">
-              <Image src={earth} width={150} alt="Lunettes" />
-            </div>
-            <h1 className="flex pt-2 justify-center text-2xl mb-2 text-center">
-              Seconde vie
-            </h1>
-          </div>
-        </div>
       </div>
     </section>
   );
