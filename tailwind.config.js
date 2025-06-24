@@ -12,6 +12,7 @@ module.exports = {
         cool: '#F8F7F6',
         brique: '#93583A',
         antra: '#4A4A4A',
+        gris: '#999999',
       },
     },
   },
