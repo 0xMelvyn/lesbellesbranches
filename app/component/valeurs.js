@@ -1,5 +1,3 @@
-'use client'
-import { useEffect } from "react";
 import Image from "next/image";
 import flag from "../../public/flag.png";
 import health from "../../public/health.png";
@@ -16,8 +14,8 @@ const items = [
   },
   {
     src: green,
-    alt: "Zéro gaspillages, tout le temps, partout",
-    title: "Zéro gaspillages, tout le temps, partout",
+    alt: "Zéro gaspillage, tout le temps, partout",
+    title: "Zéro gaspillage, tout le temps, partout",
     description: (
       <>
         Vos anciennes lunettes ? On les recycle ou on les revalorise. Le mobilier du magasin ? 100% chiné et remis à neuf !<br />
@@ -37,16 +35,6 @@ const items = [
 ];
 
 const Valeurs = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//www.instagram.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <section className="p-6 md:p-12">
       <div className="flex flex-col lg:flex-row items-center gap-10">
@@ -63,12 +51,15 @@ const Valeurs = () => {
         </div>
 
         <div className="lg:w-1/2 flex justify-center">
-          <blockquote
-            className="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/Ck0-dyXJQCs/"
-            data-instgrm-version="14"
-            style={{ background: "#FFF", border: 0, margin: 0, padding: 0 }}
-          ></blockquote>
+          <video
+            className="rounded-xl shadow-lg w-[300px] max-w-md"
+            controls
+            playsInline
+            title="Reel">
+            <source src="/reel.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+
         </div>
       </div>
 

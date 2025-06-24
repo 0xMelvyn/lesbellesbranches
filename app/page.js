@@ -19,7 +19,7 @@ export default function Home() {
 
       <section className="p-5">
       <h2 className="text-center text-5xl font-bold my-12">Passez nous voir !</h2>
-      <p className="text-2xl text-center text-gris lg:mx-20">On est à deux pas du métro François Verdier, en plein centre de Toulouse. Poussez la porte du magasin, on vous promet un moment sympa, des conseils honnêtes, et qui sait, peut-être votre prochaine paire de lunette coup de coeur ? Si vous préférez planifer votre venue :</p>
+      <p className="text-2xl text-center text-gris lg:mx-20">On est à deux pas du métro François Verdier, en plein centre de Toulouse. Poussez la porte du magasin, on vous promet un moment sympa, des conseils honnêtes, et qui sait, peut-être votre prochaine paire de lunette coup de coeur ?<br></br>Si vous préférez planifer votre venue :</p>
           <div className="flex justify-center mt-10">
 
       <Link

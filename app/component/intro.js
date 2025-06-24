@@ -17,13 +17,13 @@ const Intro = () => {
   </div>
 
   {/* Hero Section with responsive rounded bg */}
-  <div className="relative overflow-hidden rounded-t-[150px] lg:rounded-t-full h-[400px] md:h-[600px]">
+  <div className="relative overflow-hidden rounded-t-[150px] lg:rounded-t-full h-[500px] md:h-[400px]">
   <Image
     src={BG}
     alt="Fond Belles Branches"
     className="w-full h-full object-cover object-center"
   />
-  <div className="absolute inset-0 flex items-center justify-center px-6 py-16 md:py-32">
+  <div className="absolute inset-0 flex items-center justify-center px-3 md:px-6 py-16 md:py-32">
     <div className="max-w-4xl text-center space-y-6">
       <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black">
         Bienvenue chez <span className="font-bold">Les Belles Branches</span>,<br />
@@ -31,10 +31,10 @@ const Intro = () => {
         à deux pas de la station de métro François Verdier.
       </h2>
       <p className="text-base sm:text-lg md:text-2xl text-gray-200 font-medium">
-        Ici, nous prenons soin de <span className="font-bold">votre santé visuelle</span> tout en rendant le
+        Ici, nous prenons soin de <span className="font-bold">votre santé visuelle</span><br></br> tout en rendant le
         <span className="font-bold"> 100% français</span> accessible à tous.<br />
-        Pas de collections éphémères fabriquées à l'autre bout du monde :
-        uniquement des <span className="font-bold">montures locales et durables</span>,
+        Pas de collections éphémères fabriquées à l'autre bout du monde :<br></br>
+        uniquement des <span className="font-bold">montures locales et durables</span>,<br></br>
         adaptées à tous les styles et tous les budgets.
       </p>
     </div>
