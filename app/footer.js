@@ -30,6 +30,7 @@ Le samedi de 10h00 à 18h00</small>
 
         <div className="flex justify-center text-center text-2xl my-5 gap-5">
           <Link
+            title='Instagram icon'
             className="text-white hover:underline transition duration-500"
             href="https://www.instagram.com/lesbellesbranches/"
             target="_blank"
@@ -38,6 +39,7 @@ Le samedi de 10h00 à 18h00</small>
             <FaInstagram />
           </Link>
           <Link
+            title='LinkedIn Icon'
             className="text-white hover:underline transition duration-500"
             href="https://www.linkedin.com/company/les-belles-branches/"
             target="_blank"
@@ -46,6 +48,7 @@ Le samedi de 10h00 à 18h00</small>
             <FaLinkedin />
           </Link>
           <Link
+            title='Facebook Icon'
             className="text-white hover:underline transition duration-500"
             href="https://www.facebook.com/"
             target="_blank"
@@ -54,6 +57,7 @@ Le samedi de 10h00 à 18h00</small>
             <FaWhatsapp />
           </Link>
           <Link
+            title='Whatsapp Icon'
             className="text-white hover:underline transition duration-500"
             href="mailto:bonjour@lesbellesbranches.fr"
             target="_blank"

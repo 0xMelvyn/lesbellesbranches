@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex m-4 pb-1 text-2xl">
+    <nav className="flex p-4 pb-1 text-2xl bg-black">
       <div className="hidden lg:flex ml-4">
         <Link href="/">
           <Image src={Logo} alt="Logo" width={200} />
@@ -26,19 +26,19 @@ const Navbar = () => {
       <div className="hidden lg:flex flex-1 items-center justify-end">
         <Link
           href="/nos-racines"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
+          className="text-cool hover:text-mustard transition duration-300 ease-in-out mx-4"
         >
           Nos racines
         </Link>
         <Link
           href="/nos-montures"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
+          className="text-cool hover:text-mustard transition duration-300 ease-in-out mx-4"
         >
           Nos montures
         </Link>
         <Link
           href="/sante-visuelle"
-          className="hover:text-mustard transition duration-300 ease-in-out mx-4"
+          className="text-cool hover:text-mustard transition duration-300 ease-in-out mx-4"
         >
           Santé visuelle
         </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="lg:hidden flex flex-1 justify-end">
-        <button onClick={toggleMenu} className="hover:text-mustard focus:outline-none">
+        <button onClick={toggleMenu} className="text-cool hover:text-mustard focus:outline-none" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}>
           <svg
             className="h-8 w-8"
             fill="none"
@@ -70,12 +70,12 @@ const Navbar = () => {
       </div>
       {/* Mobile menu */}
       <div
-        className={`fixed z-50 top-0 right-0 h-full w-3/4 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed z-50 top-0 right-0 h-full w-3/4 bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } lg:hidden`}
       >
-        <div className="flex flex-col p-4">
-          <button onClick={toggleMenu} className="self-end mb-4">
+        <div className="flex flex-col p-4 text-cool">
+          <button onClick={toggleMenu} className="self-end mb-4" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}>
             <svg
               className="h-8 w-8"
               fill="none"
@@ -93,21 +93,21 @@ const Navbar = () => {
           </button>
           <Link
             href="/nos-racines"
-            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
+            className="py-2 text-lg text-cool hover:text-mustard transition duration-300 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
             Nos racines
           </Link>
           <Link
             href="/nos-montures"
-            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
+            className="py-2 text-lg text-cool hover:text-mustard transition duration-300 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
             Nos montures
           </Link>
           <Link
             href="/sante-visuelle"
-            className="py-2 text-lg hover:text-mustard transition duration-300 ease-in-out"
+            className="py-2 text-lg text-cool hover:text-mustard transition duration-300 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
             Santé visuelle

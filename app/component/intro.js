@@ -17,7 +17,7 @@ const Intro = () => {
   </div>
 
   {/* Hero Section with responsive rounded bg */}
-  <div className="relative overflow-hidden rounded-t-[100px] md:rounded-t-[400px] h-[400px] md:h-[600px]">
+  <div className="relative overflow-hidden rounded-t-[150px] lg:rounded-t-full h-[400px] md:h-[600px]">
   <Image
     src={BG}
     alt="Fond Belles Branches"
