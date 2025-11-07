@@ -3,6 +3,7 @@ import Head from 'next/head';
 import "./globals.css";
 import Navbar from './navbar';
 import Footer from './footer';
+import Widget from './widget';
 import { Raleway } from '@next/font/google';
 
 const raleway = Raleway({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       <body className={`font-Raleway ${raleway.className}`}>
 <Navbar />
       {children}
+      <Widget />
         
         
         <Footer />
